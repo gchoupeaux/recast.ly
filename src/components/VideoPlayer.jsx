@@ -1,7 +1,7 @@
 var VideoPlayer = (props) => (
 
-  console.log('VideoPlayer props:'),
-  console.log(props),
+  // console.log('VideoPlayer props:'),
+  // console.log(props),
 
   <div className="video-player">
     <div className="embed-responsive embed-responsive-16by9">

@@ -2,13 +2,13 @@ var VideoList = (props) => (
 
   // iterate through all of our props.videos (map)
     // create a new VideoListEntry with an attribute of video, with the video we get from map
-  console.log('VideoList props:'),
-  console.log(props),
+  // console.log('VideoList props:'),
+  // console.log(props),
 
   <div className="video-list">
     {props.videos.map(video => {
       var key = props.videos.indexOf(video);
-      return <VideoListEntry video={video} key={key} state={props.state}/>;
+      return <VideoListEntry video={video} key={key} state={props.state} titleClickHandler={props.titleClickHandler}/>;
     }
     )}
   </div>
